@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.restapispringboot.restapi.object.Account;
-import com.restapispringboot.restapi.object.QueryResultAccount;
+import com.restapispringboot.restapi.object.account.Account;
+import com.restapispringboot.restapi.object.account.QueryResultAccount;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -44,21 +44,4 @@ public class OAuth2Salesforce {
         return restTemplate.getForObject(url, QueryResultAccount.class, params).records;
     }
 
-    // @JsonIgnoreProperties(ignoreUnknown = true)
-    // public static class Account {
-    //     public String Id;
-    //     public String Name;
-    //     public String Industry;
-    //     public String Rating;
-    // }
-
-    // @JsonIgnoreProperties(ignoreUnknown = true)
-    // private static class QueryResult<T> {
-    //     public List<T> records;
-    // }
-
-    // private static class QueryResultAccount extends QueryResult<Account> {}
-    
-    public OAuth2Salesforce(){
-    }
 }

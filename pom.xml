@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.restapispringboot</groupId>
-	<artifactId>restapi-salesforce</artifactId>
+	<artifactId>restapi-salesforce-sso</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>restapi</name>
-	<description>Demo project for Spring Boot</description>
+	<name>restapi-salesforce-sso</name>
+	<description>RESTAPI Salesforce SSO project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -36,6 +36,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.security.oauth</groupId>
 			<artifactId>spring-security-oauth2</artifactId>

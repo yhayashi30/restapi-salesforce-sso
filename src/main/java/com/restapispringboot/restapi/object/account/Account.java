@@ -1,4 +1,4 @@
-package com.restapispringboot.restapi.object;
+package com.restapispringboot.restapi.object.account;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
