@@ -2,6 +2,7 @@ package com.restapispringboot.restapi;
 
 import java.util.List;
 
+import com.restapispringboot.restapi.object.Account;
 import com.restapispringboot.restapi.util.OAuth2Salesforce;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,7 @@ public class RestapiController{
     private OAuth2Salesforce force;
 
     @RequestMapping("/accounts")
-    public List<OAuth2Salesforce.Account> accounts(OAuth2Authentication principal) {
+    public List<Account> accounts(OAuth2Authentication principal) {
         return force.accounts(principal);
     }
 }
